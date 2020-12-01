@@ -2,6 +2,9 @@ const addForm = document.querySelector('.add');
 const list = document.querySelector('.todos');
 const search = document.querySelector('.search input');
 const language = document.querySelector('.language');
+const todo = document.querySelector('.todo');
+
+
 
 const generateTemplate = todo => {
 
@@ -14,6 +17,12 @@ const generateTemplate = todo => {
 
   list.innerHTML += html;
 };
+
+//add translated text to title
+
+todo.innerHTML = `
+<h1 class="mb-4">${Svenska}</h1>  
+`;
 
 
 
